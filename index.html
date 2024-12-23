@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <center>
+        <section>
+            <div class="box-login">
+                <div class="campo">
+                    <label for="Nome">Nome</label>
+                    <input type="text" id="Nome">
+                    <div id="nomeerros"></div>
+                </div>
+                <div class="campo">
+                    <label for="Cpf">CPF</label>
+                    <input type="text" id="Cpf" maxlength="11" placeholder="Digite seu CPF">
+                    <div id="cpferros"></div>
+                </div>
+                <div class="campo">
+                    <label for="Idade">Idade</label>
+                    <input type="number" id="Idade">
+                    <div id="idadeerros"></div>
+                </div>
+                <div class="campo">
+                    <label for="E-mail">E-mail</label>
+                    <input type="email" id="E-mail">
+                    <div id="emailerros"></div>
+                </div>
+                <div class="box-button">
+                    <button onclick="confirmarLog()">Enviar</button>
+                    <div id="resultado"></div>
+                </div>
+            </div>
+        </section>
+    </center>
+</body>
+</html>
